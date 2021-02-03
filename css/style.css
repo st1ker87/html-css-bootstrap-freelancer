@@ -56,10 +56,10 @@
 .portfolio {
   padding: 30px 0;
 }
-.portfolio_title,
+.section_title,
 .cutting {
   height: 50px;
-  margin: 5px 0;
+  margin: 10px 0;
   background-color: grey;
 }
 
@@ -74,6 +74,58 @@
   border-radius: 5px;
   background-color: #1EA4B6;
 }
+
+/* about */
+.about {
+  background-color: #1BBC9C;
+  text-align: center;
+}
+
+.testo {
+  height: 150px;
+  padding: 5px;
+  background-color: white;
+}
+
+.download .btn {
+  border: 1px solid white;
+  color: white;
+  background-color: #1BBC9C;
+  margin: 15px 0 30px 0;
+}
+
+/* contact */
+.contact .insert_contact {
+  height: 300px;
+  margin: 20 0;
+  background-color: #1BBC9C;
+}
+
+.btn-success {
+  background-color: #1BBC9C;
+}
+
+/* FOOTER */
+/* info */
+.info {
+  background-color: #39546D;
+  margin-top: 30px;
+}
+.info .row .col-md-4 {
+  height: 120px;
+  margin: 30px 0;
+  background-color: blue;
+}
+.info .row .col-md-4:not(:last-child) {
+  border-right: 1px solid white;
+}
+
+/* copyright */
+.copyright {
+  height: 80px;
+  background-color: #2D3E50;
+}
+
 
 @media screen and (min-width: 992px) {
   /* header */
