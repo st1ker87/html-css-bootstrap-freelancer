@@ -18,16 +18,16 @@
           <div class="row">
             <!-- parte sx della barra con il logo -->
             <div class="col-xs-6">
-              <p class="ms_big_font">start bootstrap</p>
+              <p class="ms_big_font"><strong>start bootstrap</strong></p>
             </div>
             <!-- parte dx della barra con il menu -->
             <div class="col-xs-6 text-right">
               <p class="visible-xs"><i class="fas fa-bars visible-xs"></i></p>
               <nav class="hidden-xs">
                 <ul class="list-unstyled list-inline">
-                  <li><a href="#">portfolio</a></li>
-                  <li><a href="#">about</a></li>
-                  <li><a href="#">contact</a></li>
+                  <li><a href="#"><strong>portfolio</strong></a></li>
+                  <li><a href="#"><strong>about</strong></a></li>
+                  <li><a href="#"><strong>contact</strong></a></li>
                 </ul>
               </nav>
             </div>
@@ -68,12 +68,10 @@
           <div class="row">
             <!-- titolo e cutter -->
             <div class="col-xs-12">
-              <h2 class="text-uppercase">portfolio</h2>
+              <h3 class="text-uppercase">portfolio</h3>
             </div>
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="col-xs-12">
-                <span class="ms_rule_black"></span><i class="fas fa-star"></i><span class="ms_rule_black"></span>
-              </div>
+            <div class="col-xs-12">
+              <span class="ms_rule_black"></span><i class="fas fa-star"></i><span class="ms_rule_black"></span>
             </div>
             <!-- celle con foto -->
             <div class="col-md-4 col-sm-6 col-xs-12">
@@ -100,15 +98,25 @@
       <!-- fine portfolio -->
 
       <!-- seconda sezione main: about -->
-      <div class="container-fluid about">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 section_title white"></div>
-            <div class="col-xs-12 cutting"></div>
-            <div class="col-xs-12 col-sm-6 testo"></div>
-            <div class="col-xs-12 col-sm-6 testo"></div>
-            <div class="col-xs-12 download">
-              <button type="button" class="btn btn-default"><i class="fas fa-download"></i>Download</button>
+      <div id="about" class="ms_bg_green text-center">
+        <div class="ms_wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="text-uppercase">about</h3>
+              </div>
+              <div class="col-xs-12">
+                <span class="ms_rule_white"></span><i class="fas fa-star"></i><span class="ms_rule_white"></span>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <p class="text-left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+              </div>
+              <div class="col-xs-12 col-sm-6">
+                <p class="text-left">Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+              </div>
+              <div class="col-xs-12 download">
+                <button type="button" class="btn btn-lg"><i class="fas fa-download"></i>Free Download</button>
+              </div>
             </div>
           </div>
         </div>
@@ -116,13 +124,33 @@
       <!-- fine about -->
 
       <!-- terza sezione contact -->
-      <div class="container contact">
-        <div class="row">
-          <div class="col-xs-12 section_title"></div>
-          <div class="col-xs-12 cutting"></div>
-          <div class="col-xs-12 insert_contact"></div>
-          <div class="col-xs-12">
-            <button type="button" class="btn btn-success">Send</button>
+      <div id="contact" class="text-center">
+        <div class="ms_wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <h3 class="text-uppercase">contact me</h3>
+              </div>
+              <div class="col-xs-12">
+                <span class="ms_rule_black"></span><i class="fas fa-star"></i><span class="ms_rule_black"></span>
+              </div>
+              <form class="text-left">
+                <div class="form-group">
+                  <label for="input_name"></label>
+                  <input type="text" class="form-control" id="input_name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="input_email"></label>
+                  <input type="email" class="form-control" id="input_email" placeholder="Email Adress">
+                </div>
+                <div class="form-group">
+                  <label for="input_phone_number"></label>
+                  <input type="text" class="form-control" id="input_phone_number" placeholder="Phone Number">
+                </div>
+                <textarea class="form-control" placeholder="Message" rows="3"></textarea>
+                <button type="button" class="btn btn-success">Send</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -134,22 +162,41 @@
     <!-- inizio footer -->
     <footer>
       <!-- prima parte del footer -->
-      <div class="container-fluid info">
+      <div id="info" class="text-center">
         <div class="container">
           <div class="row">
-            <div class="col-sm-4 col-md-4"></div>
-            <div class="col-sm-4 col-md-4"></div>
-            <div class="col-sm-4 col-md-4"></div>
+            <div class="col-sm-4">
+              <p class="text-uppercase"><strong>location</strong></p>
+              <p>2215 John Daniel Drive Clark,<br> MO 65243</p>
+            </div>
+            <div class="col-sm-4">
+              <p class="text-uppercase"><strong>around the web</strong></p>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-google-plus-g"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="col-sm-4">
+              <p class="text-uppercase"><strong>about freelancer</strong></p>
+              <p>Freelance is a free to use, MIT licensed Bootstrap theme created by <span class="ms_green">Start Bootstrap.</span></p>
+            </div>
           </div>
         </div>
       </div>
       <!-- fine prima parte footer -->
 
       <!-- seconda parte footer copyright -->
-      <div class="container-fluid copyright">
-        <div class="row">
-          <div class="col-md-12"></div>
+      <div id="copyright" class="text-center">
+        <div class="ms_wrapper">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-12">
+                <span class="ms_small">Copyright © Your Website 2020</span>
+              </div>
+            </div>
+          </div>
         </div>
+
       </div>
     </footer>
 
