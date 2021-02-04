@@ -21,7 +21,7 @@
 }
 
 .ms_green {
-  color: green;
+  color: #1BBC9C;
 }
 
 .fa-star {
@@ -63,6 +63,19 @@
   color: white;
 }
 
+.ms_fix_top .fa-bars {
+  font-size: 2em;
+  /* line-height: 80px; */
+}
+
+.ms_fix_top .btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+}
+
+
+
 /* jumbotron */
 .ms_jumbo {
   width: 100%;
@@ -79,6 +92,7 @@
   color: white;
 }
 
+
 .download .btn {
   border: 1px solid white;
   color: white;
@@ -90,8 +104,16 @@
 }
 
 /* contact */
+.ms_input {
+  box-shadow: none;
+  border-style: none;
+  border-bottom: 1px solid lightgrey;
+  border-radius: 0;
+}
+
 .btn-success {
   background-color: #1BBC9C;
+  margin-top: 30px;
 }
 
 /* FOOTER */
