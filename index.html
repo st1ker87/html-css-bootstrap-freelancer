@@ -11,29 +11,50 @@
   <body>
 
     <!-- inizio dell'header -->
-    <header>
+    <header class="text-uppercase">
       <!-- barra fixed top -->
-      <div class="container-fluid fix_top">
+      <div class="ms_fix_top">
         <div class="container">
           <div class="row">
             <!-- parte sx della barra con il logo -->
-            <div class="col-md-6 col-sm-6 col-xs-6">
-              <div class="logo_head inline_block"></div>
+            <div class="col-xs-6">
+              <p class="ms_big_font">start bootstrap</p>
             </div>
             <!-- parte dx della barra con il menu -->
-            <div class="col-md-6 col-sm-6 col-xs-1">
-              <div class="menu_logo inline_block"><i class="fas fa-bars"></i></div>
-              <div class="menu_head"></div>
+            <div class="col-xs-6 text-right">
+              <p class="visible-xs"><i class="fas fa-bars visible-xs"></i></p>
+              <nav class="hidden-xs">
+                <ul class="list-unstyled list-inline">
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">contact</a></li>
+                </ul>
+              </nav>
             </div>
           </div>
         </div>
       </div>
 
       <!-- jumbotron -->
-      <div class="container-fluid jumbo">
+      <div class="ms_jumbo ms_bg_green">
         <!-- div con testo contenuto nel jumbotron -->
-        <div class="jumbo_content">
-          <div class="jumbo_text"></div>
+        <div class="ms_wrapper text-center">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <img  class="ms_img" src="img/omino.svg" alt="omino_bootstrap">
+              </div>
+              <div class="col-xs-12">
+                <h1>start bootstrap</h1>
+              </div>
+              <div class="col-xs-12">
+                <span class="ms_rule_white"></span><i class="fas fa-star"></i><span class="ms_rule_white"></span>
+              </div>
+              <div class="col-xs-12">
+                <p>graphic artist - web designer - illustrator</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -42,20 +63,40 @@
     <!-- main -->
     <main>
       <!-- prima sezione del main: portfolio -->
-      <div class="container portfolio">
-        <div class="row">
-          <!-- titolo e cutter -->
-          <div class="col-md-12 col-sm-12 col-xs-12 section_title black"></div>
-          <div class="col-md-12 col-sm-12 col-xs-12 cutting"></div>
-          <!-- celle con foto -->
-          <div class="col-md-4 col-sm-6 col-xs-12 container_portfolio"><div class="img_portfolio"></div></div>
-          <div class="col-md-4 col-sm-6 col-xs-12 container_portfolio"><div class="img_portfolio"></div></div>
-          <div class="col-md-4 col-sm-6 col-xs-12 container_portfolio"><div class="img_portfolio"></div></div>
-          <div class="col-md-4 col-sm-6 col-xs-12 container_portfolio"><div class="img_portfolio"></div></div>
-          <div class="col-md-4 col-sm-6 col-xs-12 container_portfolio"><div class="img_portfolio"></div></div>
-          <div class="col-md-4 col-sm-6 col-xs-12 container_portfolio"><div class="img_portfolio"></div></div>
+      <div id="portfolio" class="text-center">
+        <div class="container">
+          <div class="row">
+            <!-- titolo e cutter -->
+            <div class="col-xs-12">
+              <h2 class="text-uppercase">portfolio</h2>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="col-xs-12">
+                <span class="ms_rule_black"></span><i class="fas fa-star"></i><span class="ms_rule_black"></span>
+              </div>
+            </div>
+            <!-- celle con foto -->
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <img src="img/cabin.png" alt="baita" class="img-responsive img-rounded ms_img_margin">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <img src="img/cake.png" alt="cake" class="img-responsive img-rounded ms_img_margin">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <img src="img/circus.png" alt="circus" class="img-responsive img-rounded ms_img_margin">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <img src="img/game.png" alt="game" class="img-responsive img-rounded ms_img_margin">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <img src="img/safe.png" alt="safe" class="img-responsive img-rounded ms_img_margin">
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <img src="img/submarine.png" alt="submarine" class="img-responsive img-rounded ms_img_margin">
+            </div>
+          </div>
         </div>
-      </div>
+        </div>
       <!-- fine portfolio -->
 
       <!-- seconda sezione main: about -->

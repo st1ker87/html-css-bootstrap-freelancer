@@ -1,11 +1,53 @@
 /* UTILITY */
-.inline_block {
+.ms_big_font {
+  font-size: 2em;
+}
+
+.ms_wrapper {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.ms_img {
+  max-height: 300px;
+}
+
+.ms_img_margin {
+  margin: 15px 0;
+}
+
+.ms_bg_green {
+  background-color: #1BBC9C;
+}
+
+.fa-star {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+.ms_rule_white {
   display: inline-block;
+  vertical-align: middle;
+  width: 10vw;
+  margin: 0 20px;
+  margin-bottom: 15px;
+  height: 1px;
+  border: 1px solid white;
+}
+
+.ms_rule_black {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10vw;
+  margin: 0 20px;
+  margin-bottom: 15px;
+  height: 1px;
+  border: 1px solid black;
 }
 
 /* HEADER */
 /* barra fixed top */
-.fix_top {
+.ms_fix_top {
   width: 100%;
   height: 80px;
   line-height: 80px;
@@ -16,40 +58,15 @@
   background-color: #2D3E50;
   color: white;
 }
-.fix_top .logo_head {
-  height: 30px;
-  width: 150px;
-  vertical-align: middle;
-  background-color: white;
-}
-.fix_top .menu_head {
-  display: none;
-  height: 30px;
-  width: 300px;
-  vertical-align: middle;
-  background-color: white;
-}
 
 /* jumbotron */
-.jumbo {
-  margin-top: 80px;
-  height: 300px;
-  background-color: #1BBC9C;
-}
-.jumbo_content {
+.ms_jumbo {
   width: 100%;
-  height: 100%;
-  position: relative;
+  margin-top: 80px;
+  padding: 40px 0;
+  color: white;
 }
-.jumbo_text {
-  position: absolute;
-  height: 150px;
-  width: 300px;
-  background-color: white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+
 
 /* MAIN */
 /* portfolio */
@@ -128,11 +145,5 @@
 
 
 @media screen and (min-width: 992px) {
-  /* header */
-  .menu_logo {
-    display: none;
-  }
-  .fix_top .menu_head {
-    display: inline-block;
-  }
+
 }
